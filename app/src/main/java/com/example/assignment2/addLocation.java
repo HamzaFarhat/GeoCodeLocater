@@ -63,14 +63,14 @@ public class addLocation extends AppCompatActivity {
             public void onClick(View view) {
                 if(TextUtils.isEmpty(lat.getText().toString()))
                 {
-                    //Tell the user that the mortgage is not set correctly
+                    //ALERT MESSAGE
                     alert.setMessage("Latitude is not set.");
                     alert.setCancelable(true);
                     alert.show();
                 }
                 else if(TextUtils.isEmpty(lon.getText().toString()))
                 {
-                    //Tell the user that the mortgage is not set correctly
+                    //ALERT MESSAGE
                     alert.setMessage("Longitude is not set.");
                     alert.setCancelable(true);
                     alert.show();
@@ -80,14 +80,14 @@ public class addLocation extends AppCompatActivity {
                     Double longitude = Double.parseDouble(lon.getText().toString());
                     if(latitude>90 || latitude <-90)
                     {
-                        //Tell the user that the mortgage is not set correctly
+                        //ALERT MESSAGE
                         alert.setMessage("Latitude must be between -90 and 90.");
                         alert.setCancelable(true);
                         alert.show();
                     }
                     else if(longitude>180 || longitude <-180)
                     {
-                        //Tell the user that the mortgage is not set correctly
+                        //ALERT MESSAGE
                         alert.setMessage("Longitude must be between -180 and 180.");
                         alert.setCancelable(true);
                         alert.show();
